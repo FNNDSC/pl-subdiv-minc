@@ -19,18 +19,18 @@ def get_version(rel_path: str) -> str:
 
 
 setup(
-    name='chris-plugin-template',
-    version=get_version('app.py'),
-    description='A ChRIS DS plugin template',
+    name='subdiv-minc',
+    version=get_version('subdiv_mask.py'),
+    description='A ChRIS plugin wrapper around mincresample for increasing the resolution of binary images.',
     author='FNNDSC',
-    author_email='dev@babyMRI.org',
-    url='https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules=['app'],
+    author_email='Jennings.Zhang@childrens.harvard.edu',
+    url='https://github.com/FNNDSC/pl-subdiv-minc',
+    py_modules=['subdiv_mask'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = app:main'
+            'subdiv_mask = subdiv_mask:main'
         ]
     },
     classifiers=[
