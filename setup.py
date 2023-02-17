@@ -26,7 +26,7 @@ setup(
     author_email='Jennings.Zhang@childrens.harvard.edu',
     url='https://github.com/FNNDSC/pl-subdiv-minc',
     py_modules=['subdiv_mask'],
-    install_requires=['chris_plugin'],
+    install_requires=['chris_plugin', 'loguru'],
     license='MIT',
     entry_points={
         'console_scripts': [
